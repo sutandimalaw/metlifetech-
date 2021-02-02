@@ -1,0 +1,14 @@
+.card-stats.height {
+  min-height: 133px;
+}
+
+@media (min-width: 768px) {
+  .info-mobile-app {
+    padding-top: 40px !important;
+  }
+}
+
+.carousel-center {
+  margin: auto;
+  width: fit-content;
+}

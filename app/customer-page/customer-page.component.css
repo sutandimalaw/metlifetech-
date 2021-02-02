@@ -1,0 +1,43 @@
+.profile-page-dots {
+    background-image : url('src/assets/img/dots.png');
+    background-size : contain;
+}
+.profile-title-header {
+    position: absolute;
+    top: 125px;
+    left: 60px;
+}
+
+.profile-title-general {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.profile-description-general{
+    margin-top: 60px;
+}
+
+.section-head{
+    padding-top: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+.section-general{
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.pattern{
+    position : absolute;
+    opacity : .04;
+    right: 20%;
+    max-width: 50%;
+    top: 190px; 
+  }
+

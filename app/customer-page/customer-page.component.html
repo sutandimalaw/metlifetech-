@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <ng-container *ngIf="isLoadingData">
+    <div class="page-header header-filter"></div>
+  </ng-container>
+  <ng-container *ngIf="!isLoadingData">
+    <div class="profile-page-dots">
+      <section class="section-head">
+        <img class="pattern" src="assets/img/path3.png" />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card-plain">
+                <div class="card-header">
+                  <h1 class="profile-title-header text-left">{{content.title}}</h1>
+                  <h5 class="text-on-back">{{content.subTitle}}</h5>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section-general">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h1 class="text-center">{{section.firstSection.title}}</h1>
+            <p class="text-justify">{{section.firstSection.description}}</p>
+            <div class="row row-grid justify-content-center mt-5">
+              <ng-container *ngFor="let logo of section.firstSection.logos;">
+                <div class="col-md-{{12 / section.firstSection.logos.length}} px-2 py-2 margin-logo">
+                  <img alt="Rounded image" class="img-fluid rounded" src="{{logo.src}}">
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section"></div>
+  </ng-container>
+</div>

@@ -1,0 +1,28 @@
+.card-stats.height {
+  min-height: 133px;
+}
+
+@media (min-width: 768px) {
+  .info-mobile-app {
+    padding-top: 40px !important;
+  }
+  .margin-picture {
+    margin-left: 1rem !important;
+  }
+
+  .profile-description.top {
+    padding-top: unset !important;
+  }
+}
+
+@media(min-width:300px){
+  .margin-picture {
+    margin-left: 0px;
+  }
+
+  .profile-description.top {
+    padding-top: 1.5rem;
+  }
+}
+
+

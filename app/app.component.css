@@ -1,0 +1,21 @@
+.logo {
+  width: 133px;
+}
+.copyright{
+  font-size :0.8571em;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+.section-copyright{
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0 20px;
+  clear: both;
+  text-align: center;
+  background-color: #333333
+}
+.copyright-footer{
+  font-size :0.8571em;
+  color: white;
+}

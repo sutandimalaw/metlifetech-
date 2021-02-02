@@ -1,0 +1,26 @@
+.label-form {
+  color: #4b4b4b;
+}
+.pattern2{
+  position : absolute;
+  opacity : .04;
+  right: 20%;
+  max-width: 50%;
+  /* top: -90px; */
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.249999625rem + 2px);
+  padding: 0.5rem 0.7rem;
+  font-size: 0.875rem;
+  line-height: 1.428571;
+  color: unset !important;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #cad1d7;
+  border-radius: 0.25rem;
+  box-shadow: none;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

@@ -1,0 +1,77 @@
+<div class="wrapper">
+  <ng-container *ngIf="isLoadingData">
+    <div class="page-header header-filter"></div>
+  </ng-container>
+  <ng-container *ngIf="!isLoadingData">
+    <div class="page-header header-filter img">
+      <div class="container">
+        <div class="content-center brand">
+          <h2 class="h1-seo">{{content.title}}</h2>
+          <h3>
+            {{content.subTitle}}
+          </h3>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <img class="path" src="assets/img/path3.png">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h1 class="title text-center">{{section.firstSection.title}}</h1>
+            <p class="description text-justify"> 
+              {{section.firstSection.description}} 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section section-lg">
+      <img class="path" src="assets/img/path4.png">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h1 class="text-center">{{section.thirdSection.title}}</h1>
+            <p class="description text-justify">{{section.thirdSection.description}}</p>
+            <div class="row row-grid justify-content-center mt-5">
+              <ng-container *ngFor="let logo of section.thirdSection.logos;">
+                <div class="col-md-{{12 / section.thirdSection.logos.length}} px-2 py-2 margin-logo">
+                  <img alt="Rounded image" class="img-fluid rounded" src="{{logo.src}}">
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-lg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <h1 class="text-center">{{section.fourthSection.title}}</h1>
+            <p class="description text-justify">{{section.fourthSection.description}}</p>
+            <div class="row row-grid justify-content-center">
+              <ng-container *ngFor="let feature of section.fourthSection.featureList;">
+                <div class="col-lg-{{12 / section.fourthSection.featureList.length}} text-center">
+                  <div class="info info-mobile-app">
+                    <div class="icon icon-{{feature.type}}">
+                      <i class="tim-icons {{feature.icon}}"> </i>
+                    </div>
+                    <h4 class="info-title">{{feature.title}}</h4>
+                    <hr class="line-primary" />
+    
+                    <p>
+                      {{feature.description}}
+                    </p>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </ng-container>
+</div>

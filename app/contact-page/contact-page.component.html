@@ -1,0 +1,109 @@
+<div class="wrapper"> 
+    <section class="section">
+      <img class="pattern2" src="assets/img/path1.png" />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card-plain">
+              <div class="card-header">
+                <h1 class="profile-title text-left">Contact Us</h1>
+                <h5 class="text-on-back">Metlife</h5>
+              </div>
+              <div class="card-body">
+                <alert *ngIf="isError && errorMessage" [type]="'danger'">
+                  {{errorMessage}}
+                </alert>
+                <alert *ngIf="!isError && successMessage" [type]="'success'">
+                  {{successMessage}}
+                </alert>
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="label-form"> Your Name </label>
+                        <input class="form-control" [(ngModel)]="contactForm.name" [ngModelOptions]="{standalone: true}" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="label-form"> Email address </label>
+                        <input
+                          class="form-control"
+                          placeholder=""
+                          type="email"
+                          [(ngModel)]="contactForm.email" [ngModelOptions]="{standalone: true}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="label-form"> Subject </label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          [(ngModel)]="contactForm.subject" [ngModelOptions]="{standalone: true}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="label-form"> Message </label>
+                        <input
+                          class="form-control"
+                          placeholder=""
+                          type="text"
+                          [(ngModel)]="contactForm.message" [ngModelOptions]="{standalone: true}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-submit btn-round float-right"
+                    placement="right"
+                    type="submit"
+                    (click)="submit()"
+                    [disabled]="isSubmitting"
+                  >
+                    Send message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+            <div class="info info-horizontal">
+              <div class="icon icon-new">
+                <i class="tim-icons icon-square-pin"> </i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Find us at the office</h4>
+                <p>
+                  50 MacPherson Road  <br />
+  
+                  Amazana Building <br />
+  
+                  Singapore 348471
+                </p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-new">
+                <i class="tim-icons icon-email-85"> </i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Email us</h4>
+                <p>
+                  info@metlifetechsolutions.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>

@@ -1,0 +1,137 @@
+.profile-page-dots {
+    background-image : url('src/assets/img/dots.png');
+    background-size : contain;
+    /* background-color: #5603ad; */
+}
+
+.pattern1{
+    left: auto;
+    right: -250px;
+    max-width : 70%;
+    top:0;
+    position: absolute;
+    opacity: .03;
+}
+.pattern2{
+    position : absolute;
+    opacity : .03;
+    right : 20%;
+    max-width: 45%;
+    top: -90px;
+}
+.pattern3{
+    position : absolute;
+    opacity : .03;
+    left: 35%;
+    max-width: 30%;
+    top: -90px;
+}
+.pattern4{
+    position : absolute;
+    opacity : .03;
+    left: 20%;
+    max-width: 60%;
+    top: 0px;
+}
+.section-head{
+    padding-top: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+.card-stats.height {
+    min-height: 133px;
+  }
+
+.card-title {
+    color: #ffffff !important;
+}
+
+@media (min-width: 300px) {
+    .profile-title-header {
+        position: absolute;
+        top: 80px;
+        left: 60px;
+    }
+
+    .text-on-back-slider{
+        font-size: 2.5rem!important;
+        position: relative;
+        margin-left:  -4px;
+        font-weight: 900;
+        /* color: rgba(255, 255, 255, 0.2) !important; */
+    }
+
+    .profile-title-general {
+        position: absolute;
+        top: 60px;
+        left: unset !important;
+    }
+
+    .profile-description-general{
+        margin-top: 90px !important;
+        margin-bottom: 15px !important;
+    }
+}
+  
+@media (min-width: 768px) {
+    .info-mobile-app {
+        padding-top: 40px !important;
+    }
+
+    .profile-title-header {
+        position: absolute;
+        top: 125px;
+        left: 60px;
+    }
+
+    .text-on-back-slider{
+        font-size: 2rem!important;
+        position: relative;
+        margin-left:  -4px;
+        font-weight: 900;
+        /* color: rgba(255, 255, 255, 0.2) !important; */
+    }
+
+    .profile-title-general {
+        position: absolute;
+        top: 40px;
+        left: 50px !important;
+        font-size: 1.8rem !important;
+    }
+
+    .profile-description-general{
+        margin-top: 70px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+    .text-on-back-slider{
+        font-size: 3rem!important;
+        position: relative;
+        margin-left:  -4px;
+        font-weight: 900;
+        /* color: rgba(255, 255, 255, 0.2) !important; */
+    }
+
+    .profile-title-header {
+        position: absolute;
+        top: 125px;
+        left: 60px;
+    }
+
+    .profile-title-general {
+        position: absolute;
+        top: 60px;
+        left: 60px !important;
+        font-size: 2.0624999938rem !important;
+    }
+  }
+
+  .img-fluid {
+    max-width: 100%!important;
+  }

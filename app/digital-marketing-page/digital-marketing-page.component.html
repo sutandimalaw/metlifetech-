@@ -1,0 +1,184 @@
+<div class="wrapper">
+  <ng-container *ngIf="isLoadingData">
+    <div class="page-header header-filter"></div>
+  </ng-container>
+  <ng-container *ngIf="!isLoadingData">
+    <div class="page-header header-filter img">
+      <div class="container">
+        <div class="content-center brand">
+          <h2 class="h1-seo">{{content.title}}</h2>
+          <p class="web-description subtitle">
+            {{content.subTitle}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <img class="path" src="assets/img/path3.png" />
+
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-5">
+            <h1 class="profile-title text-left">{{section.firstSection.title}}</h1>
+            <p class="profile-description text-justify">
+              MetLife Tech Solutions works with you to understand your business, and use performance marketing tools to drive measurable results with 
+              clear returns on investment. Our extensive experience with search engine optimization (SEO) has helped to drive brand visibility among 
+              potential clients, and increase conversions for many of our clients. .
+            </p>
+            <div class="profile-description text-justify">
+              <h4 class="pt-2">Case Study: Search Engine Marketing for a Heritage Pharma Brand</h4>
+              <p class="profile-description text-justify">
+                In 2018, we had the opportunity to work with a heritage pharmaceutical brand that had been around for several decades. They began as a contract manufacturer for topical creams and solutions, 
+                but were looking to establish a new line of own-brand generic drugs to capitalize on their strong distribution networks 
+                with clinics and hospitals. Not only did we help them to build a web application for their medication ordering and inventory management, 
+                but they also engaged us to help them grow their presence online.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row justify-content-between align-items-center">
+              <carousel [showIndicators]="true">
+                <ng-container *ngFor="let carousel of section.firstSection.carousel;">
+                  <slide>
+                    <img
+                      alt="First slide"
+                      class="d-block"
+                      src="{{carousel.src}}"
+                    />
+    
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>{{carousel.description}}</h5>
+                    </div>
+                  </slide>
+                </ng-container>
+              </carousel>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="profile-description text-justify top">
+              We sat down with the key management and their sales representatives to better 
+              understand how they might tailor their online content to be more relevant to their intended audiences. 
+              We began by understanding their unique selling propositions, their intended target audiences, 
+              as well as their closest competitors. <br />
+
+              This formed the basis of our research, enabling us to develop keywords that would help their brand to appear more 
+              frequently whenever potential customers were searching for similar terms. Once we had developed this map, 
+              we then worked with their marketing department to optimize their online content, both on and off-site to align 
+              their brand with the keywords frequently searched by their target audiences. Over the course of 6 months, 
+              we repeated this process of testing and optimizing their digital content. <br />
+
+              Within a year of working with us, the company not only saw a 300% increase in inbound traffic to their site, 
+              but sales across their various brands also rose by 65%. Not only that, but through the process of testing and 
+              optimizing, we helped them discover and refine what really mattered about their brand to their target audiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <img class="path" src="assets/img/path4.png" />
+
+      <div class="container">
+        <div class="row row-grid justify-content-between">
+          <div class="col-md-12 mt-lg-5">
+            <div class="row">
+              <ng-container *ngFor="let stat of section.secondSection.stats;">
+                <div class="col-lg-3 col-sm-12 px-2 py-2">
+                  <div class="card card-stats height">
+                    <div class="card-body">
+                      <h4 class="px-2 py-2 card-list-title">{{stat.description}}</h4>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-12">
+            <h1 class="profile-title text-left">{{section.thirdSection.title}}</h1>
+            <p class="profile-description text-justify">
+              At MetLife Tech Solutions, we provide award-winning digital marketing services including Google Analytics, 
+              Inbound Marketing, SEO, Social Media Marketing, Online Advertising, and CRM tools. We follow proven proprietary 
+              frameworks to help you drive real business results.
+              Most customers don’t click on links beyond the first page of search results. We help you to reach and stay 
+              at the top of searches in your brand category, and grow your visibility and reach from generic search traffic 
+              <br />
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-md-6 mt-4 margin-picture">
+            <div class="row justify-content-between align-items-center">
+              <carousel [showIndicators]="true">
+                <ng-container *ngFor="let carousel of section.thirdSection.carousel;">
+                  <slide>
+                    <img
+                      alt="Second slide"
+                      class="d-block"
+                      src="{{carousel.src}}"
+                    />
+    
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>{{carousel.description}}</h5>
+                    </div>
+                  </slide>
+                </ng-container>
+              </carousel>
+            </div>
+          </div>
+          <div class="col-md-5 mt-4 text-justify">
+            <p>
+              We help to drive the right kind of customers through your door by understanding what your target audience is searching for, 
+              how to put your brand in front of customers, and increase conversion rates in a measurable and sustainable way. 
+            </p>
+           <br/>
+            <h4>Why choose MetLife Tech Solutions as your Digital Marketing Agency? </h4>
+            <ul>
+              <li class="list">Uniquely optimized SEO strategies to multiply outreach.</li>
+              <li class="list">Targeted ROI with excellent results.</li>
+              <li class="list">Increased click-through rate to website.</li>
+              <li class="list">Targeting relevant traffic to the website.</li>
+              <li class="list">Instant boost in business leads/sales.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section-lg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <h1 class="text-center">{{section.fourthSection.title}}</h1>
+            <div class="row row-grid justify-content-center">
+              <ng-container *ngFor="let feature of section.fourthSection.featureList;">
+                <div class="col-lg-{{12 / section.fourthSection.featureList.length}} text-center">  
+                  <div class="info info-mobile-app">
+                    <div class="icon icon-{{feature.type}}">
+                      <i class="tim-icons {{feature.icon}}"> </i>
+                    </div>
+                    <h4 class="info-title">{{feature.title}}</h4>
+                    <hr class="line-primary" />
+                    <p>
+                      {{feature.description}}
+                    </p>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </ng-container>
+</div>
